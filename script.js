@@ -1,12 +1,15 @@
-const line = document.getElementById("line");
-let angle = 0;
+// Wait until DOM is ready
+window.onload = function () {
+  const line = document.getElementById("line");
+  let angle = 0;
 
-setInterval(() => {
-  angle += 2;
-  line.style.transform = `rotate(${angle}deg)`;
-}, 20);
+  setInterval(() => {
+    angle += 2;
+    line.style.transform = `rotate(${angle}deg)`;
+  }, 20);
+};
 
-// highlight bold words
+// Highlight bold words
 function highlight() {
   const boldWords = document.querySelectorAll('strong');
   boldWords.forEach(el => {

@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Rotating Line + Bold Highlighter</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div id="line"></div>
 
+  <p>
+    <a href="#" onmouseover="highlight()" onmouseout="return_normal()">
+      Hover to highlight bold words
+    </a>
+  </p>
+  <p>
+    This is a <strong>rotating</strong> and <strong>highlighting</strong> example.
+  </p>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
